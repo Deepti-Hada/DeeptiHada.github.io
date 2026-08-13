@@ -435,11 +435,11 @@ h1{
 /* MOBILE */
 @media(max-width:768px){
     .hero{
-        text-align: left;
-        margin-top: 50px;
+        height:auto;
+        padding-top:200px
     }
   .hero h1{
-    font-size: 2.3rem;
+    font-size: 1.9rem;
         line-height: 1.4;
   }
 }
@@ -518,54 +518,6 @@ GLOBE GLOW
     50%{
         opacity:.65;
         transform:scale(1.1);
-    }
-
-}
-
-/*================================
-ORBIT LINES
-================================*/
-
-.globe-orbit{
-    position:absolute;
-    width:330px;
-    height:330px;
-    border:1px solid rgba(168,85,247,.13);
-    border-radius:50%;
-    z-index:2;
-    pointer-events:none;
-}
-
-.orbit-one{
-    transform:rotate(25deg) scaleX(1.25);
-    animation:orbitRotate 12s linear infinite;
-}
-
-.orbit-two{
-    transform:rotate(-55deg) scaleX(.65);
-    animation:orbitRotateReverse 15s linear infinite;
-}
-
-@keyframes orbitRotate{
-
-    from{
-        transform:rotate(25deg) scaleX(1.25);
-    }
-
-    to{
-        transform:rotate(385deg) scaleX(1.25);
-    }
-
-}
-
-@keyframes orbitRotateReverse{
-
-    from{
-        transform:rotate(-55deg) scaleX(.65);
-    }
-
-    to{
-        transform:rotate(-415deg) scaleX(.65);
     }
 
 }
@@ -1180,6 +1132,36 @@ height:380px;
 width:52px;
 height:52px;
 font-size:24px;
+}
+.html{
+top:30px;
+left:50px;
+animation-delay:0s;
+}
+.css{
+top:30px;
+right:50px;
+animation-delay:1s;
+}
+.js{
+bottom:50px;
+left:50px;
+animation-delay:2s;
+}
+.wp{
+bottom:50px;
+right:50px;
+animation-delay:3s;
+}
+.react{
+top:40%;
+left:15px;
+animation-delay:4s;
+}
+.git{
+top:40%;
+right:15px;
+animation-delay:5s;
 }
 }
 
