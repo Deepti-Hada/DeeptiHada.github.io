@@ -542,3 +542,66 @@ scrollTopBtn.addEventListener("click", () => {
     });
 
 });
+
+// ---------form submission
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+
+    contactForm.addEventListener("submit", async function (e) {
+
+        e.preventDefault();
+
+        const submitBtn = contactForm.querySelector(
+            'button[type="submit"]'
+        );
+
+        const originalText = submitBtn.textContent;
+
+        submitBtn.textContent = "Sending...";
+        submitBtn.disabled = true;
+
+        const formData = new FormData(contactForm);
+
+        try {
+
+            const response = await fetch(
+                "https://api.web3forms.com/submit",
+                {
+                    method: "POST",
+                    body: formData
+                }
+            );
+
+            const result = await response.json();
+
+            if (result.success) {
+
+                submitBtn.textContent = "Message Sent ✓";
+
+                contactForm.reset();
+
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                }, 3000);
+
+            } else {
+
+                console.error(result);
+
+                submitBtn.textContent = "Try Again";
+                submitBtn.disabled = false;
+            }
+
+        } catch (error) {
+
+            console.error(error);
+
+            submitBtn.textContent = "Try Again";
+            submitBtn.disabled = false;
+        }
+
+    });
+
+}
