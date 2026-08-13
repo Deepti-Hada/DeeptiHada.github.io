@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="css/style.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<title>Deepti Hada | Projects</title>
+<title>Deepti Hada | Portfolio</title>
 </head>
 
 <body>
@@ -62,17 +62,11 @@
     </div>
 </div>
 <div class="cursor-dot"></div>
-<div class="cursor-ring"></div> 
-
-<!-- Banner Effects -->
-<div class="glow glow-1"></div>
-<div class="glow glow-2"></div>
-
-
+<div class="cursor-ring"></div>
+ 
 <!-- ======================= PROJECTS ======================= -->
 <section class="main-section container" id="projects">
-
-
+   
     <div class="projects-grid">
         <!---------- PROJECT 1 -------->
         <div class="project-card" data-project="1"  data-aos="zoom-in-up">
@@ -93,7 +87,7 @@
                     <span>Elementor</span>
                 </div>
                 <h3>Resort Website</h3>
-                <p>Modern responsive Hotel website with smooth animations.</p>
+                <p>Modern responsive Hotel website with smooth animations and premium UI.</p>
                 <div class="project-btns">
                     <button class="details-btn">View Details</button>
                     <a href="https://detulip.com" target="_blank">View Live</a>
@@ -137,22 +131,22 @@
                     <span class="yellow"></span>
                     <span class="green"></span>
                 </div>
-                <span>mahakbeautyshop.com</span>
+                <span>reportsandinsights.com</span>
             </div>
             <div class="project-image">
-                <img src="images/project3.jpg">
+                <img src="images/DAV.png">
             </div>
             <div class="project-info">
                 <div class="tech">
-                    <span>WooCommerce</span>
-                    <span>WordPress</span>
-                    <span>Elementor</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Javascript</span>
                 </div>
-                <h3>E-Commerce Store</h3>
-                <p>WooCommerce online shopping website.</p>
+                <h3>Business Website</h3>
+                <p>Custom Website for market research company.</p>
                 <div class="project-btns">
                     <button class="details-btn">View Details</button>
-                    <a href="">VIew Live</a>
+                    <a href="https://reportsandinsights.com">VIew Live</a>
                 </div>
             </div>
         </div>
@@ -167,7 +161,7 @@
                 <span>admitarcconsulting.com</span>
             </div>
             <div class="project-image">
-                <img src="images/project3.jpg">
+                <img src="images/NB.png">
             </div>
             <div class="project-info">
                 <div class="tech">
@@ -182,6 +176,12 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="view-all">
+        <a href="projects.html">
+            View All Projects →
+        </a>
     </div>
 </section>
 
@@ -285,58 +285,56 @@
         <div class="contact-right" data-aos="flip-up" data-aos-delay="200">
             <h3>Tell Me About Your Project</h3>
             <p>Fill out the form and I'll get back to you soon.</p>
-            <form>
+            <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                  <input type="hidden" name="access_key" value="5024a31f-a30e-4b47-9979-039932355373">
+                <input type="hidden" name="subject" value="New Portfolio Inquiry">
                 <div class="input-row">
                     <div class="input-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="input-group">
-                        <input type="email" placeholder="Email Address" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
                     </div>
                 </div>
                 <div class="input-row">
+                     <div class="input-group">
+                        <input type="text" name="phone-number" placeholder="Contact No." required>
+                    </div>
                     <div class="input-group">
-                        <select required>
+                        <select name="type" required>
                             <option selected disabled>Project Type</option>
                             <option>Business Website</option>
-                            <option>Portfolio Website</option>
-                            <option>E-Commerce</option>
-                            <option>Landing Page</option>
                             <option>WordPress Website</option>
+                            <option>E-Commerce Website</option>
+                            <option>Landing Page</option>
+                            <option>Custom Website</option>
                             <option>Website Redesign</option>
-                        </select>
-                    </div>
-                    <div class="input-group">
-                        <select required>
-                            <option selected disabled> Project Timeline </option>
-                            <option>ASAP</option>
-                            <option>1 Week</option>
-                            <option>2-4 Weeks</option>
-                            <option>1-2 Months</option>
-                            <option>Flexible</option>
+                            <option>Other</option>
                         </select>
                     </div>
                 </div>
+                
                 <div class="input-group">
-                    <textarea rows="3" placeholder="Tell me about your project..."></textarea>
+                    <textarea rows="3" name="message" placeholder="Tell me about your project..."></textarea>
                 </div>
-                <button class="contact-btn"> Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                <button type="submit" class="contact-btn"> Send Message <i class="fa-solid fa-paper-plane"></i></button>
             </form>
         </div>
     </div>
-    <div class="text-center pt-5">
+     <div class="text-center pt-5">
     <a href="index.html" class="footer-btn">Back To Home 
             <svg width="20" height="20"viewBox="0 0 24 24" fill="none">
                     <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>  
             </a>
-            </div>
+  </div>
 </section>
+<!-- ======================= CONTACT END ======================= -->
+
 <button id="scrollTopBtn" class="scroll-top" aria-label="Scroll to top">
     <i class="fa-solid fa-angle-up"></i>
 </button>
-<!-- ======================= CONTACT END ======================= -->
-
+<!-- ========================= FOOTER END======================= -->
  
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="JS/script.js"></script>
