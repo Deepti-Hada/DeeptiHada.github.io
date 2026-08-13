@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/bootstrap-4.4.1.css"/>
+<link rel="stylesheet" href="CSS/style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<title>Deepti Hada | Portfolio</title>
+</head>
+
+<body>
+<canvas id="networkCanvas"></canvas>
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">
+            <img src="images/DH-Logo.png" alt="DH Logo">
+        </div>
+        <div class="menu desktop-menu">
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#services">Services</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <a href="tel:7014209249" class="btn-primary">Call Now</a>
+        <!-- Mobile Menu Button -->
+        <button class="menu-toggle" aria-label="Open Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</nav>
+<!-- Overlay -->
+<div class="menu-overlay"></div>
+<!-- Sidebar -->
+<div class="mobile-sidebar">
+    <div class="sidebar-top">
+        <img src="images/DH-Logo.png" alt="DH LOGO">
+        <button class="close-menu">
+            &times;
+        </button>
+    </div>
+    <div class="sidebar-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="sidebar-bottom">
+        <a href="tel:7014209249" class="btn-primary">
+            Call Now
+        </a>
+    </div>
+</div>
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!------------------- HERO BANNER ----------------->
+ <header class="hero" id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 d-flex flex-column align-items-start justify-content-center"  data-aos="fade-right">
+          <span class="subtitle">Hi, I’m Deepti Hada</span>
+          <h1>Helping Brands Grow <br>Through <span class="hl-text dynamic-word"> Modern Websites</span></h1>
+          <span class="my-3 ">Design | Develope | Deploy</span>
+          <p>Driven by creativity and clean code, I build responsive and user-focused websites that deliver real business impact.
+            Passionate about crafting modern, high-performance websites that help businesses grow and succeed online.</p>
+          <div class="mt-3 d-flex align-items-center justify-content-start">
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="Deepti_Resume.pdf" class="btn-secondary ml-3">Download Resume</a>
+          </div>
+        </div>
+        
+      <div class="col-md-5 text-center hero-visual">
+
+    <div class="globe-wrapper">
+
+        <div class="globe-orbit orbit-one"></div>
+        <div class="globe-orbit orbit-two"></div>
+
+        <div class="globe-glow"></div>
+
+        <img src="images/banner-right.png"
+             class="hero-globe"
+             alt="Digital technology globe">
+
+        <!-- Floating Tags -->
+
+        <div class="globe-tag tag-creative">
+            <span class="tag-icon">✦</span>
+            <span>Creative</span>
+        </div>
+
+        <div class="globe-tag tag-modern">
+            <span class="tag-icon">✧</span>
+            <span>Modern</span>
+        </div>
+
+        <div class="globe-tag tag-responsive">
+            <span class="tag-icon">▣</span>
+            <span>Responsive</span>
+        </div>
+
+        <div class="globe-tag tag-performance">
+            <span class="tag-icon">ϟ</span>
+            <span>Performance</span>
+        </div>
+
+        <!-- Small floating particles -->
+
+        <span class="globe-dot dot-one"></span>
+        <span class="globe-dot dot-two"></span>
+        <span class="globe-dot dot-three"></span>
+        <span class="globe-dot dot-four"></span>
+
+    </div>
+
+</div>
+
+    </div>
+  </div>
+</header>  
+
+<!-- Banner Effects -->
+<div class="glow glow-1"></div>
+<div class="glow glow-2"></div>
+
+<!--============================== ABOUT SECTION ===============================-->
+<section class="main-section container" id="about" >
+<div class="section-heading"  data-aos="fade-up" data-aos-duration="1000">
+<span class="subtitle">About Me</span>
+<h2>Building Digital <span>Experiences</span></h2>
+<p>I create modern, responsive and high-performing websites that help
+businesses establish a strong online presence.</p>
+</div>
+
+<div class="about-container">
+<!-- LEFT -->
+<div class="about-left"  data-aos="fade-right" data-aos-duration="1000">
+<div class="developer-card-about">
+<div class="blob"></div>
+<div class="orbit orbit1"></div>
+<div class="orbit orbit2"></div>
+<!-- CENTER -->
+<div class="developer-core">
+<div class="monitor">
+<i class="fa-solid fa-laptop-code"></i>
+</div>
+<div class="mobile">
+<i class="fa-solid fa-mobile-screen-button"></i>
+</div>
+</div>
+
+<!-- FLOATING ICONS -->
+<div class="tech-anim html">
+<i class="fa-brands fa-html5"></i>
+</div>
+
+<div class="tech-anim css">
+<i class="fa-brands fa-css3-alt"></i>
+</div>
+
+<div class="tech-anim js">
+<i class="fa-brands fa-js"></i>
+</div>
+
+<div class="tech-anim wp">
+<i class="fa-brands fa-wordpress"></i>
+</div>
+
+<div class="tech-anim react">
+<i class="fa-brands fa-react"></i>
+</div>
+
+<div class="tech-anim git">
+<i class="fa-brands fa-git-alt"></i>
+</div>
+
+</div>
+</div>
+
+<!-- RIGHT -->
+<div class="about-right"  data-aos="fade-left" data-aos-duration="1000">
+<span class="about-tag">
+WHO I AM
+</span>
+<h3>Building Modern Websites That<span> Deliver Results.</span>
+</h3>
+
+<p>
+I'm <strong>Deepti Hada</strong>, a Web & WordPress Developer with
+<strong>3.5+ years</strong> of experience building responsive,
+user-focused websites using HTML, CSS, JavaScript, PHP,
+WordPress, WooCommerce and Elementor.
+</p>
+
+<p>
+I enjoy turning ideas into modern digital experiences that are
+fast, scalable and designed to help businesses grow online.
+</p>
+
+<div class="about-stats">
+<div class="glass-card">
+<h2 class="counter" data-target="3.5">3.5+</h2>
+<span>Years Experience</span>
+</div>
+
+<div class="glass-card">
+<h2 class="counter" data-target="20">20+</h2>
+<span>Projects Delivered</span>
+</div>
+
+<div class="glass-card">
+<h2>100%</h2>
+<span>Responsive Design</span>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+<!--========================= ABOUT SECTION END ==========================-->
+
+<!--======================== SKILLS ====================== -->
+ <section class="main-section container" id="skills">
+    <div class="section-heading"  data-aos="fade-up" data-aos-duration="1000">
+        <span class="subtitle">MY EXPERTISE</span>
+        <h2>Technical <span class="hl-text">Skills</span></h2>
+        <p>Technologies and tools I use to build modern web experiences.</p>
+    </div>
+
+    <div class="skills-grid">
+        <div class="skill-card"  data-aos="zoom-in">
+            <div class="card-header">
+                <div class="dots">
+                    <span class="red"></span>
+                    <span class="yellow"></span>
+                    <span class="green"></span>
+                </div>
+                <span class="title">
+                    <i class="fa-solid fa-code"></i> /frontend
+                </span>
+            </div>
+
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Bootstrap & Tailwind</li>
+                <li>Responsive Design</li>
+            </ul>
+        </div>
+
+        <div class="skill-card featured"  data-aos="zoom-in" data-aos-delay="100">
+            <div class="card-header">
+                <div class="dots">
+                    <span class="red"></span>
+                    <span class="yellow"></span>
+                    <span class="green"></span>
+                </div>
+                <span class="title">
+                    <i class="fa-brands fa-wordpress"></i> /wordpress
+                </span>
+            </div>
+
+            <ul>
+                <li>WordPress</li>
+                <li>Elementor</li>
+                <li>WooCommerce</li>
+                <li>ACF</li>
+                <li>Theme Customization</li>
+            </ul>
+        </div>
+
+        <div class="skill-card"  data-aos="zoom-in" data-aos-delay="200">
+            <div class="card-header">
+                <div class="dots">
+                    <span class="red"></span>
+                    <span class="yellow"></span>
+                    <span class="green"></span>
+                </div>
+                <span class="title">
+                    <i class="fa-brands fa-react"></i> /react
+                </span>
+            </div>
+
+            <ul>
+                <li>ReactJS</li>
+                <li>Components</li>
+                <li>Hooks</li>
+                <li>API Integration</li>
+            </ul>
+        </div>
+
+        <div class="skill-card"  data-aos="zoom-in" data-aos-delay="300">
+            <div class="card-header">
+                <div class="dots">
+                    <span class="red"></span>
+                    <span class="yellow"></span>
+                    <span class="green"></span>
+                </div>
+                <span class="title">
+                    <i class="fa-solid fa-gears"></i> /tools
+                </span>
+            </div>
+
+            <ul>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>VS Code</li>
+                <li>Postman</li>
+            </ul>
+        </div>
+
+        <div class="skill-card"  data-aos="zoom-in" data-aos-delay="400">
+            <div class="card-header">
+                <div class="dots">
+                    <span class="red"></span>
+                    <span class="yellow"></span>
+                    <span class="green"></span>
+                </div>
+                <span class="title">
+                    <i class="fa-solid fa-gauge-high"></i> /optimization
+                </span>
+            </div>
+
+            <ul>
+                <li>Core Web Vitals</li>
+                <li>PageSpeed</li>
+                <li>SEO Basics</li>
+                <li>Performance Audit</li>
+            </ul>
+        </div>
+
+        <div class="skill-card"  data-aos="zoom-in" data-aos-delay="500">
+            <div class="card-header">
+                <div class="dots">
+                    <span class="red"></span>
+                    <span class="yellow"></span>
+                    <span class="green"></span>
+                </div>
+                <span class="title">
+                    <i class="fa-solid fa-database"></i> /backend
+                </span>
+            </div>
+
+            <ul>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>REST APIs</li>
+                <li>Database Design</li>
+            </ul>
+        </div>
+
+    </div>
+</section> 
+<!--======================== SKILLS END ====================== -->
+
+<!-- ======================= SERVICES ======================== -->
+ <section class="main-section container" id="services">
+
+    <div class="section-heading"  data-aos="fade-up" data-aos-duration="1000">
+        <span class="subtitle">What I Do</span>
+        <h2>Services I <span>Offer</span></h2>
+        <p>Providing High-converting web solutions for businesses to grow</p>
+    </div>
+
+    <div class="services-grid">
+
+        <div class="service-card"  data-aos="flip-up">
+            <div class="service-number">01</div>
+            <div class="service-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <h3>Custom Web Development</h3>
+            <p>Responsive websites built using HTML, CSS, JavaScript, React and PHP with clean,
+               scalable code.</p>
+            <a href="#contact">Get Started <i class="fas fa-arrow-right"></i> </a>
+        </div>
+
+        <div class="service-card" data-aos="flip-up" data-aos-delay="100">
+            <div class="service-number">02</div>
+            <div class="service-icon">
+                <i class="fab fa-wordpress"></i>
+            </div>
+            <h3>WordPress Development</h3>
+            <p>Professional WordPress websites with Elementor,
+               theme customization, plugin integration and responsive layouts.</p>
+            <a href="#contact">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card" data-aos="flip-up" data-aos-delay="200">
+            <div class="service-number">03</div>
+            <div class="service-icon">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            <h3>WooCommerce Stores</h3>
+            <p>Complete eCommerce solutions with secure payments,
+                optimized checkout and product management.</p>
+            <a href="#contact">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card" data-aos="flip-up" data-aos-delay="300">
+            <div class="service-number">04</div>
+            <div class="service-icon">
+                <i class="fas fa-bullseye"></i>
+            </div>
+            <h3>Landing Pages</h3>
+            <p>High-converting landing pages designed for
+                products, campaigns and lead generation.</p>
+            <a href="#contact">
+                Get Started
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="service-card" data-aos="flip-up" data-aos-delay="400">
+            <div class="service-number">05</div>
+            <div class="service-icon">
+                <i class="fas fa-tachometer-alt"></i>
+            </div>
+            <h3>Performance Optimization</h3>
+            <p>Speed optimization, Core Web Vitals,
+                SEO improvements and responsive performance.</p>
+            <a href="#contact">
+                Get Started
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="service-card" data-aos="flip-up" data-aos-delay="500">
+            <div class="service-number">06</div>
+            <div class="service-icon">
+                <i class="fas fa-tools"></i>
+            </div>
+            <h3>Website Maintenance</h3>
+            <p>Ongoing updates, bug fixes, security checks
+                and technical support for your website. </p>
+            <a href="#contact">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+    </div>
+</section> 
+<!-- ======================= SERVICES END ======================== -->
+
+<!--======================= EXPERIENCE SECTION =======================-->
+<section class="main-section container" id="experience">
+
+<div class="section-heading"  data-aos="fade-up" data-aos-duration="1000">
+<span class="subtitle">MY JOURNEY</span>
+<h2>Experience <span>Beyond The Code.</span></h2>
+<p>A look at the work, responsibilities and experiences that shaped the developer I am today.</p>
+</div>
+
+<div class="career-path">
+<!-- EXPERIENCE 01 -->
+<article class="career-item current">
+<div class="career-marker">
+<span>01</span>
+<div class="marker-line"></div>
+</div>
+<div class="career-content">
+<div class="career-meta">
+<div>
+<span class="career-period">May 2026 — PRESENT</span>
+<span class="career-current"><i></i> CURRENT</span>
+</div>
+<span class="career-type">PROFESSIONAL</span>
+</div>
+<div class="career-main">
+<div class="career-title">
+<h3>Web & WordPress Developer</h3>
+<h4>Device Doctor India</h4>
+</div>
+<p class="career-summary">
+Developing modern, responsive and conversion-focused websites
+for businesses while combining clean UI with reliable
+WordPress development and custom functionality.
+</p>
+</div>
+<div class="career-details">
+<div class="career-block">
+<span class="block-label">FOCUS</span>
+<div class="focus-items">
+<span>Business Oriented Website</span>
+<span>Fully Responsive</span>
+<span>UI Implementation</span>
+<span>Performance</span>
+</div>
+</div>
+<div class="career-block">
+<span class="block-label">KEY CONTRIBUTIONS</span>
+
+<ul>
+<li>Built responsive websites across multiple industries</li>
+<li>Converted designs into functional WordPress websites</li>
+<li>Customized themes, plugins and Elementor components</li>
+<li>Improved responsive behaviour and website performance</li>
+</ul>
+</div>
+
+</div>
+
+<div class="career-bottom">
+
+<div class="career-stats">
+
+<div>
+<strong>15+</strong>
+<span>Projects</span>
+</div>
+
+<div>
+<strong>3+</strong>
+<span>Years</span>
+</div>
+
+<div>
+<strong>100%</strong>
+<span>Responsive</span>
+</div>
+
+</div>
+
+<div class="career-tech">
+<span>HTML</span>
+<span>CSS</span>
+<span>JS</span>
+<span>PHP</span>
+<span>WordPress</span>
+</div>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- EXPERIENCE 02 -->
+<article class="career-item">
+
+<div class="career-marker">
+<span>02</span>
+<div class="marker-line"></div>
+</div>
+
+<div class="career-content">
+
+<div class="career-meta">
+<div>
+<span class="career-period">2020 — 2022</span>
+</div>
+<span class="career-type">PROFESSIONAL</span>
+</div>
+
+<div class="career-main">
+
+<div class="career-title">
+<h3>Frontend Web Developer</h3>
+<h4>Previous Company</h4>
+</div>
+
+<p class="career-summary">
+Worked on creating responsive interfaces and translating
+design concepts into clean, functional web experiences
+with strong attention to usability and visual consistency.
+</p>
+
+</div>
+
+<div class="career-details">
+
+<div class="career-block">
+<span class="block-label">FOCUS</span>
+
+<div class="focus-items">
+<span>Frontend Development</span>
+<span>Responsive Design</span>
+<span>UI Development</span>
+<span>Cross Browser</span>
+</div>
+</div>
+
+<div class="career-block">
+<span class="block-label">KEY CONTRIBUTIONS</span>
+
+<ul>
+<li>Developed responsive layouts for desktop and mobile</li>
+<li>Implemented reusable UI components and sections</li>
+<li>Worked with designers to translate visual concepts</li>
+<li>Maintained consistency across multiple website pages</li>
+</ul>
+</div>
+
+</div>
+
+<div class="career-bottom">
+
+<div class="career-stats">
+
+<div>
+<strong>20+</strong>
+<span>Web Pages</span>
+</div>
+
+<div>
+<strong>2+</strong>
+<span>Years</span>
+</div>
+
+<div>
+<strong>100%</strong>
+<span>Responsive</span>
+</div>
+
+</div>
+
+<div class="career-tech">
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>Bootstrap</span>
+</div>
+
+</div>
+
+</div>
+
+</article>
+
+</div>
+
+<div class="career-end">
+<span></span>
+<p>And the journey continues...</p>
+</div>
+</section>
+
+
+<!-- ======================= PROJECTS ======================= -->
+<section class="main-section container" id="projects">
+    <div class="section-heading" data-aos="fade-up" data-aos-duration="1000">
+        <span class="subtitle">Portfolio</span>
+        <h2>Featured <span>Projects</span></h2>
+        <p> Explore some of my recent web development projects. </p>
+    </div>
+
+    <div class="projects-grid">
+        <!---------- PROJECT 1 -------->
+        <div class="project-card" data-project="1"  data-aos="zoom-in-up">
+            <div class="browser-bar">
+                <div class="browser-dots">
+                    <span class="red"></span>
+                    <span class="yellow"></span>
+                    <span class="green"></span>
+                </div>
+                <span>detulip.com</span>
+            </div>
+            <div class="project-image">
+                <img src="images/detulip.png" alt="">
+            </div>
+            <div class="project-info">
+                <div class="tech">
+                    <span>Wordpress</span>
+                    <span>Elementor</span>
+                </div>
+                <h3>Resort Website</h3>
+                <p>Modern responsive Hotel website with smooth animations and premium UI.</p>
+                <div class="project-btns">
+                    <button class="details-btn">View Details</button>
+                    <a href="https://detulip.com" target="_blank">View Live</a>
+                </div>
+            </div>
+        </div>
+
+        <!-------- PROJECT 2 ----------->
+        <div class="project-card" data-project="2"  data-aos="zoom-in-up" data-aos-delay="100">
+            <div class="browser-bar">
+                <div class="browser-dots">
+                    <span class="red"></span>
+                    <span class="yellow"></span>
+                    <span class="green"></span>
+                </div>
+                <span>mahakbeautyshop.com</span>
+            </div>
+            <div class="project-image">
+                <img src="images/Mahakbeautyshop.png">
+            </div>
+            <div class="project-info">
+                <div class="tech">
+                    <span>WordPress</span>
+                    <span>WooCommerce</span>
+                    <span>Elementor</span>
+                </div>
+                <h3>E-Commerce Website</h3>
+                <p>Responsive eCommerce website built with WordPress and WooCommerce.</p>
+                <div class="project-btns">
+                    <button class="details-btn">View Details</button>
+                    <a href="https://mahakbeautyshop.com">View Live</a>
+                </div>
+            </div>
+        </div>
+
+        <!-------- PROJECT 3 ---------->
+        <div class="project-card" data-project="3"   data-aos="zoom-in-up" data-aos-delay="200">
+            <div class="browser-bar">
+                <div class="browser-dots">
+                    <span class="red"></span>
+                    <span class="yellow"></span>
+                    <span class="green"></span>
+                </div>
+                <span>reportsandinsights.com</span>
+            </div>
+            <div class="project-image">
+                <img src="images/DAV.png">
+            </div>
+            <div class="project-info">
+                <div class="tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Javascript</span>
+                </div>
+                <h3>Business Website</h3>
+                <p>Custom Website for market research company.</p>
+                <div class="project-btns">
+                    <button class="details-btn">View Details</button>
+                    <a href="https://reportsandinsights.com">VIew Live</a>
+                </div>
+            </div>
+        </div>
+        <!---------- PROJECT 4 ---------->
+          <div class="project-card" data-project="4"   data-aos="zoom-in-up" data-aos-delay="300">
+            <div class="browser-bar">
+                <div class="browser-dots">
+                    <span class="red"></span>
+                    <span class="yellow"></span>
+                    <span class="green"></span>
+                </div>
+                <span>admitarcconsulting.com</span>
+            </div>
+            <div class="project-image">
+                <img src="images/NB.png">
+            </div>
+            <div class="project-info">
+                <div class="tech">
+                    <span>WordPress</span>
+                    <span>Elementor</span>
+                </div>
+                <h3>Landing Page</h3>
+                <p>Landing page to capture more leads via ads</p>
+                <div class="project-btns">
+                    <button class="details-btn">View Details</button>
+                    <a href="#">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="view-all">
+        <a href="projects.html">
+            View All Projects →
+        </a>
+    </div>
+</section>
+
+<!-- ======================= POPUP ======================= -->
+<div class="project-popup">
+    <div class="popup-box">
+        <button class="close-popup"> × </button>
+        <div class="popup-left">
+            <video id="popupVideo" controls></video>
+        </div>
+        <div class="popup-right">
+            <span class="popup-category">Web Development </span>
+            <h2 id="popupTitle">
+            </h2>
+            <p id="popupDescription">
+            </p>
+            <h4>Features</h4>
+            <ul id="popupFeatures"> </ul>
+            <h4>Technologies</h4>
+            <div id="popupTech"> </div>
+            <div class="popup-buttons">
+                <a id="popupLive"> Live Demo </a>
+                <a id="popupGithub">GitHub </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--======================== CONTACT SECTION ====================-->
+<section class="main-section container" id="contact" >
+    <div class="section-heading" data-aos="fade-up" data-aos-duration="1000">
+        <span class="subtitle">Get In Touch</span>
+        <h2>Let's Build Something <span>Amazing Together</span></h2>
+         <p>Whether it's a custom website, WordPress solution,or an eCommerce store —
+            <br> I'm here to transformyour ideas into a modern digital experience.
+         </p>
+    </div>
+
+    <div class="contact-wrapper">
+        <!-- LEFT SIDE -->
+        <div class="contact-left" data-aos="fade-right">
+            <div class="status-box">
+                <span class="status-dot"></span>
+                <div>
+                    <h4>Available for Freelance</h4>
+                    <p>Currently accepting new projects.</p>
+                </div>
+            </div>
+            <div class="timeline">
+                <!-- ITEM-1 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Email</h4>
+                        <a href="mailto:deeptihada12@gmail.com">
+                           deeptihada12@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ITEM-2 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Phone</h4>
+                        <a href="tel:+917014209249">
+                            +91 7014209249
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ITEM-3 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Location</h4>
+                        <p>Kota, Rajasthan</p>
+                    </div>
+                </div>
+
+                <!-- ITEM-4 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Response Time</h4>
+                        <p>Usually within 24 Hours</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- RIGHT SIDE -->
+        <div class="contact-right" data-aos="flip-up" data-aos-delay="200">
+            <h3>Tell Me About Your Project</h3>
+            <p>Fill out the form and I'll get back to you soon.</p>
+            <form>
+                <div class="input-row">
+                    <div class="input-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <select required>
+                            <option selected disabled>Project Type</option>
+                            <option>Business Website</option>
+                            <option>Portfolio Website</option>
+                            <option>E-Commerce</option>
+                            <option>Landing Page</option>
+                            <option>WordPress Website</option>
+                            <option>Website Redesign</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <select required>
+                            <option selected disabled> Project Timeline </option>
+                            <option>ASAP</option>
+                            <option>1 Week</option>
+                            <option>2-4 Weeks</option>
+                            <option>1-2 Months</option>
+                            <option>Flexible</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <textarea rows="3" placeholder="Tell me about your project..."></textarea>
+                </div>
+                <button class="contact-btn"> Send Message <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- ======================= CONTACT END ======================= -->
+
+<!--======================== FOOTER START ====================== -->
+<section class="main-section container pb-3">
+    <div class="footer-wrapper">
+        <!-- LEFT -->
+        <div class="footer-left"  data-aos="fade-right">
+            <span class="subtitle">END OF PORTFOLIO</span>
+            <h2>Beginning of Our <span>Collaboration.</span> </h2>
+             <p>Thanks for scrolling this far.<br>You've just explored my portfolio.
+              <br>If you have an idea, let's turn it into something amazing.
+             </p>
+             <a href="#contact" class="footer-btn">Initialize Collaboration 
+            <svg width="20" height="20"viewBox="0 0 24 24" fill="none">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>  
+            </a>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="developer-card"  data-aos="fade-left">
+            <div class="card-header">
+                <div class="dots">
+                    <span class="red"></span>
+                    <span class="yellow"></span>
+                    <span class="green"></span>
+                </div>
+                <span>developer.js</span>
+            </div>
+
+            <div class="card-body">
+                <div class="line">
+                    <span class="prompt">></span>Status
+                </div>
+                  <div class="answer">
+                    <span class="online"></span>Available for Freelance
+                  </div>
+
+                <div class="line">
+                    <span class="prompt">></span>Let's_Connect
+                </div>
+
+                <div class="links">
+                  <a href="mailto:dhada315@gmail.com"><i class="fa-regular fa-envelope"></i> dhada315@gmail.com</a>
+                  <a href="https://github.com/Deepti-Hada"><i class="fa-brands fa-github"></i> github.com/Deepti-Hada</a>
+                  <a href="in/deepti-h-947360262"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/deepti-hada</a>
+                </div>
+
+                <div class="line">
+                     <span class="prompt">></span> Console
+                </div>
+                    <div class="answer">
+                      Thanks for visiting ❤️
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 - Designed & Developed by <span>Deepti Hada</span> </p>
+    </div>
+</section>
+<button id="scrollTopBtn" class="scroll-top" aria-label="Scroll to top">
+    <i class="fa-solid fa-angle-up"></i>
+</button>
+<!-- ========================= FOOTER END======================= -->
+ 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="JS/script.js"></script>
+
+</body>
+</html>
