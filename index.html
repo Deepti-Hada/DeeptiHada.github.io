@@ -76,7 +76,7 @@
             Passionate about crafting modern, high-performance websites that help businesses grow and succeed online.</p>
           <div class="mt-3 d-md-flex align-items-center justify-content-start">
             <a href="#projects" class="btn-primary mb-3">View Projects</a>
-            <a href="Deepti_Resume.pdf" class="btn-secondary ml-md-3 mb-3">Download Resume</a>
+            <a href="Deepti_Resume.pdf" class="btn-secondary ml-md-3">Download Resume</a>
           </div>
         </div>
         
@@ -874,19 +874,19 @@ with strong attention to usability and visual consistency.
             <h3>Tell Me About Your Project</h3>
             <p>Fill out the form and I'll get back to you soon.</p>
             <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="5024a31f-a30e-4b47-9979-039932355373">
+                  <input type="hidden" name="access_key" value="5024a31f-a30e-4b47-9979-039932355373">
                 <input type="hidden" name="subject" value="New Portfolio Inquiry">
                 <div class="input-row">
                     <div class="input-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="input-group">
-                        <input type="email" placeholder="Email Address" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
                     </div>
                 </div>
                 <div class="input-row">
                     <div class="input-group">
-                        <select required>
+                        <select name="type" required>
                             <option selected disabled>Project Type</option>
                             <option>Business Website</option>
                             <option>Portfolio Website</option>
@@ -897,7 +897,7 @@ with strong attention to usability and visual consistency.
                         </select>
                     </div>
                     <div class="input-group">
-                        <select required>
+                        <select name="time" required>
                             <option selected disabled> Project Timeline </option>
                             <option>ASAP</option>
                             <option>1 Week</option>
@@ -908,7 +908,7 @@ with strong attention to usability and visual consistency.
                     </div>
                 </div>
                 <div class="input-group">
-                    <textarea rows="3" placeholder="Tell me about your project..."></textarea>
+                    <textarea rows="3" name="message" placeholder="Tell me about your project..."></textarea>
                 </div>
                 <button class="contact-btn"> Send Message <i class="fa-solid fa-paper-plane"></i></button>
             </form>
