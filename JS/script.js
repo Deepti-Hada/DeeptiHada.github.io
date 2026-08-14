@@ -543,6 +543,8 @@ scrollTopBtn.addEventListener("click", () => {
 
 });
 
+
+
 // ---------form submission
 const contactForm = document.getElementById("contactForm");
 
@@ -605,3 +607,7 @@ if (contactForm) {
     });
 
 }
+
+
+
+ 
