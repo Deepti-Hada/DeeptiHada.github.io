@@ -1128,11 +1128,6 @@ font-size:28px;
 .developer-card-about{
 height:380px;
 }
-.tech{
-width:52px;
-height:52px;
-font-size:24px;
-}
 .html{
 top:30px;
 left:50px;
@@ -2149,7 +2144,10 @@ left:26px;
 
 @media(max-width:480px){
 .contact-right h3{
-font-size:28px;
+font-size:21px;
+}
+.status-box h4{
+    font-size:20px;
 }
 }
 /*================== CONTACT END ========== */
@@ -2220,19 +2218,6 @@ font-size:28px;
     align-items:center;
     position:relative;
     z-index:2;
-}
-.footer-left h2{
-    color:#fff;
-    font-size:48px;
-    margin:18px 0;
-}
-.footer-left h2 span{
-    color:#A855F7;
-}
-.footer-left p{
-    color:#B8B4D9;
-    line-height:1.9;
-    max-width:500px;
 }
 .developer-card{
     background:rgba(255,255,255,.04);
