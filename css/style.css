@@ -1704,13 +1704,13 @@ gap:4px;
 
 .career-stats strong{
 color:#fff;
-font-size:19px;
+font-size:15px;
 font-weight:600;
 }
 
 .career-stats span{
 color:#636d84;
-font-size:11px;
+font-size:13px;
 letter-spacing:.5px;
 }
 
@@ -2423,7 +2423,7 @@ margin:auto;
 
 /*-----------IMAGE----------*/
 .project-image{
-    height:270px;
+    height:320px;
     overflow:hidden;
     position:relative;
 }
@@ -2432,9 +2432,9 @@ margin:auto;
     display:block;
     transition:transform 8s linear;
 }
-.project-card:hover .project-image img{
+/* .project-card:hover .project-image img{
     transform:translateY(calc(-100% + 270px));
-}
+} */
 /* .project-image img:hover{
     transform:translateY(0);
 } */
@@ -2549,6 +2549,10 @@ margin:auto;
     border-radius:22px;
     overflow:hidden;
     display:grid;
+     /* max-height: 700px; */
+     height: min(700px, 85vh);
+    height: 80vh;
+     min-height: 500px;
     grid-template-columns:1.1fr .9fr;
     transform:scale(.9);
     transition:.35s;
@@ -2559,19 +2563,39 @@ margin:auto;
 }
 
 /*-------------VIDEO----------*/
-.popup-left{
-    background:#000;
+.popup-left {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    background: #000;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    scrollbar-width: none;
 }
-.popup-left video{
-    width:100%;
-    height:100%;
-    object-fit:cover;
+
+.popup-left::-webkit-scrollbar {
+    display: none;
+}
+.popup-left img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    top: 0;
 }
 /*-------------RIGHT------------*/
 .popup-right{
     padding:35px;
-    max-height:85vh;
+    /* max-height:85vh; */
+     height: 100%;
+    min-height: 0;
     overflow-y:auto;
+    scrollbar-width: none;
+}
+ 
+.popup-right::-webkit-scrollbar {
+    display: none;
 }
 .popup-category{
     display:inline-block;
@@ -2649,9 +2673,10 @@ margin:auto;
 @media(max-width:991px){
     .popup-box{
         grid-template-columns:1fr;
+           height:90vh;
     }
     .popup-left{
-        height:280px;
+        height:380px;
     }
 }
 @media(max-width:768px){
@@ -2659,9 +2684,34 @@ margin:auto;
         grid-template-columns:1fr;
     }
     .project-image{
-        height:220px;
+        height:250px;
     }
     .project-card:hover .project-image img{
         transform:translateY(calc(-100% + 220px));
     }
 }
+@media(max-width:500px){
+   .details-btn,
+.project-btns a{
+    padding:8px 11px;
+}
+  .popup-left{
+        height:300px;
+    }
+    .popup-right {
+    padding: 20px;
+}
+    .popup-right h2 {
+    font-size: 24px;
+}
+.popup-right h4 {
+    font-size: 19px;
+}
+.popup-buttons a {
+  padding:10px 14px;
+}
+}
+
+
+
+
