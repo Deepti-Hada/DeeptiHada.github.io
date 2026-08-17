@@ -219,7 +219,7 @@ const heroWords = [
     "Modern Websites",
     "Digital Presence",
     "Smart Solutions",
-    "Digital Growth"
+    "Responsive UI"
 ];
 
 let wordIndex = 0;
@@ -260,7 +260,7 @@ const projects = {
         title: "Resort Website",
         category: "Wordpress",
         description: "Modern responsive Hotel website with smooth animations and premium UI.",
-        video: "videos/project1.mp4",
+        image: "images/Detulip.png",
         features: [
             "Fully Responsive",
             "Modern & Premium UI",
@@ -280,7 +280,7 @@ const projects = {
         title: "E-Commerce Website",
         category: "WooCommerce",
         description: "Responsive eCommerce website built with WordPress and WooCommerce.",
-        video: "videos/project2.mp4",
+        image: "images/mahakbeautyshop.png",
         features: [
             "Responsive Design",
             "SEO Friendly",
@@ -300,7 +300,26 @@ const projects = {
         title: "E-Commerce Website",
         category: "WooCommerce",
         description: "Online shopping website developed using WooCommerce.",
-        video: "videos/project3.mp4",
+        image: "images/DAV.png",
+        features: [
+            "Shopping Cart",
+            "Checkout",
+            "Responsive",
+            "Payment Integration"
+        ],
+        tech: [
+            "WooCommerce",
+            "WordPress"
+        ],
+        live: "https://your-live-link.com",
+        github: "#"
+    },
+
+     4: {
+        title: "E-Commerce Website",
+        category: "WooCommerce",
+        description: "Online shopping website developed using WooCommerce.",
+        image: "images/NB.png",
         features: [
             "Shopping Cart",
             "Checkout",
@@ -321,13 +340,81 @@ const projects = {
 
 
 // -----------POPUP OPEN 
+
 const cards = document.querySelectorAll(".project-card");
 const popup = document.querySelector(".project-popup");
 const closeBtn = document.querySelector(".close-popup");
 
 const popupTitle = document.getElementById("popupTitle");
 const popupDescription = document.getElementById("popupDescription");
-const popupVideo = document.getElementById("popupVideo");
+const popupImage = document.getElementById("popupImage");
+
+let imageScrollAnimation = null;
+let imageScrollTimeout = null;
+function startImageAutoScroll() {
+
+    const container = document.querySelector(".popup-left");
+
+    if (!container || !popupImage) return;
+
+    // Stop any previous animation
+    if (imageScrollAnimation) {
+        cancelAnimationFrame(imageScrollAnimation);
+    }
+
+    if (imageScrollTimeout) {
+        clearTimeout(imageScrollTimeout);
+    }
+
+    // Start from the top
+    container.scrollTop = 0;
+
+    // Small delay so image dimensions are calculated
+    imageScrollTimeout = setTimeout(() => {
+
+        const maxScroll =
+            container.scrollHeight - container.clientHeight;
+
+        if (maxScroll <= 0) return;
+
+        const speed = 0.7;
+
+        function scrollImage() {
+
+            container.scrollTop += speed;
+
+            if (container.scrollTop >= maxScroll) {
+
+                // Stay at bottom for a moment
+                setTimeout(() => {
+
+                    container.scrollTo({
+                        top: 0,
+                        behavior: "smooth"
+                    });
+
+                    setTimeout(() => {
+                        imageScrollAnimation =
+                            requestAnimationFrame(scrollImage);
+                    }, 1200);
+
+                }, 1200);
+
+                return;
+            }
+
+            imageScrollAnimation =
+                requestAnimationFrame(scrollImage);
+        }
+
+        imageScrollAnimation =
+            requestAnimationFrame(scrollImage);
+
+    }, 500);
+}
+
+// -------------
+
 const popupFeatures = document.getElementById("popupFeatures");
 const popupTech = document.getElementById("popupTech");
 const popupLive = document.getElementById("popupLive");
@@ -342,7 +429,12 @@ cards.forEach(card => {
         popupTitle.textContent = project.title;
         popupDescription.textContent = project.description;
         popupCategory.textContent = project.category;
-        popupVideo.src = project.video;
+        popupImage.src = project.image;
+
+        popupImage.onload = function () {
+        startImageAutoScroll();
+        };
+      
         popupLive.href = project.live;
         popupGithub.href = project.github;
         popupFeatures.innerHTML = "";
@@ -364,46 +456,29 @@ cards.forEach(card => {
 
         document.body.style.overflow = "hidden";
 
-        popupVideo.load();
-
     });
 
 });
 
+
+
+
 // ------POPUP CLOSE
 
 function closePopup(){
-
     popup.classList.remove("active");
-
     document.body.style.overflow = "auto";
-
-    popupVideo.pause();
-
-    popupVideo.currentTime = 0;
-
 }
-
 closeBtn.addEventListener("click", closePopup);
-
 popup.addEventListener("click", function(e){
-
     if(e.target === popup){
-
         closePopup();
-
     }
-
 });
-
 document.addEventListener("keydown", function(e){
-
     if(e.key === "Escape"){
-
         closePopup();
-
     }
-
 });
 
 
